@@ -1,0 +1,89 @@
+.column {
+  float: left;
+  width: 100%;
+}
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1140px;
+  overflow: auto;
+  padding: 0 20px;
+  position: relative;
+}
+.intro {
+  font-size: 1.3rem;
+  margin: 3.3rem 0 0.8rem;
+  line-height: 1.4;
+  font-weight: bold;
+  text-align: center;
+}
+.expertise-block {
+  margin: 2rem 0 1rem;
+}
+.logo {
+  font-size: 2.2rem;
+}
+#me {
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+#me-header {
+  float: left;
+  width: 100%;
+}
+section {
+  overflow: auto;
+  padding: 0 0 50px;
+}
+.statement {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+.summary {
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+@media (min-width: 550px) {
+  .column {
+    margin-left: 4%;
+    width: 30.66%;
+  }
+  .column:first-child {
+    margin-left: 0px;
+  }
+  .container {
+    width: 80%;
+  }
+  #me-header {
+    margin-left: 17.33%;
+    width: 65.33%
+  }
+  section {
+    padding: 0 0 65px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 750px) {
+  .intro {
+    font-size: 2rem;
+    margin: 5rem 0 1rem;
+  }
+  .statement {
+    font-size: 1.4rem;
+  }
+}

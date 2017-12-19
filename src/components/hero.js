@@ -1,7 +1,7 @@
 import React from 'react'
 import './hero.css'
 
-const Hero = props =>
+const Hero = () =>
   <div id='fullscreen-hero' className='home-hero'>
     <div className='hero-container'>
       <div className='hero-content'>
