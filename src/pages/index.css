@@ -46,10 +46,6 @@
   background-color: #fff;
   color: #252a30;
 }
-.hero-content button:hover:after {
-  background-color: #252a30;
-  color: #fff;
-}
 .hero-content button:focus {
   outline: none;
 }
@@ -263,10 +259,6 @@ section {
 #sub-footer button:hover {
   background-color: #252a30;
   color: #fff;
-}
-#sub-footer button:hover:after {
-  background-color: #fff;
-  color: #252a30;
 }
 #sub-footer button:focus {
   outline: none;
