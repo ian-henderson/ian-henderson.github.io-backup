@@ -245,6 +245,7 @@ section {
   margin: 0 auto;
 }
 #sub-footer button {
+  background-color: #fff;
   border: 1px solid #252a30;
   color: #252a30;
   cursor: pointer;
