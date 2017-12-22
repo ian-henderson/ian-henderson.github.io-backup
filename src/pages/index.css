@@ -171,7 +171,7 @@ section {
     margin-left: 4%;
     width: 30.66%;
   }
-  .column:first-child {
+  .column:nth-child(3n - 2) {
     margin-left: 0px;
   }
   .container {

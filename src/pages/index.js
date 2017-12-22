@@ -2,6 +2,39 @@ import React from 'react'
 import redditScreenshot from '../images/redditScreenshot.png'
 import './index.css'
 
+const content = {
+  hero: {
+    header: "Ian Henderson",
+    subheader: "Software Engineer",
+    buttonLabel: "Yes, I'm available for hire",
+    learnMoreLabel: "Learn more about what I do"
+  },
+  me: {
+    intro: "My Expertise",
+    statement: "I've got chops in all phases of the design process.",
+    expertises: [
+      {
+        iconClass: "fas fa-terminal",
+        title: "Title 1",
+        summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+      },
+      {
+        iconClass: "fab fa-codepen",
+        title: "Title 2",
+        summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+      },
+      {
+        iconClass: "fab fa-node-js",
+        title: "Title 3",
+        summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+      }
+    ]
+  },
+  personalProjects: {},
+  subFooter: {},
+  footer: {}
+}
+
 const IndexPage = () =>
   <div>
     {/* Hero */}
@@ -11,11 +44,12 @@ const IndexPage = () =>
           <div id='logo-container'>
             <i id='hero-logo' className='fas fa-code'></i>
           </div>
-          <h1 id='hero-header'>Hi, I'm  Ian. I build software for the web.</h1>
-          <a href='#'><button id='hero-button'>Yes, I'm available for hire</button></a>
+          <h1 id='hero-header'>{content.hero.header}</h1>
+          <p id='hero-subheader'>{content.hero.subheader}</p>
+          <a href='#'><button id='hero-button'>{content.hero.buttonLabel}</button></a>
           <div className='learn-more-container'>
             <a id='learn-more-link' href='#'>
-              Learn more about what I do<br />
+              {content.hero.learnMoreLabel}<br />
               <i id='learn-more-chevron' className='fas fa-chevron-down'></i>
             </a>
           </div>
@@ -27,31 +61,19 @@ const IndexPage = () =>
     <section id='me'>
       <div className='container'>
         <div id='me-header-container'>
-          <p className='intro'>My Expertise</p>
-          <p className='statement'>I've got chops in all phases of the design process.</p>
+          <p className='intro'>{content.me.intro}</p>
+          <p className='statement'>{content.me.statement}</p>
         </div>
         <div>
-          <div className='column'>
-            <div className='expertise-block'>
-              <i className='fas fa-terminal expertise-logo'></i>
-              <h4 className='expertise-title'>Title 1</h4>
-              <p className='expertise-summary'>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
+          {content.me.expertises.map((expertise, index) => 
+            <div className='column'>
+              <div className='expertise-block'>
+                <i className={`${expertise.iconClass} expertise-logo`}></i>
+                <h4 className='expertise-title'>{expertise.title}</h4>
+                <p className='expertise-summary'>{expertise.summary}</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className='column'>
-          <div className='expertise-block'>
-            <i className='fab fa-codepen expertise-logo'></i>
-            <h4 className='expertise-title'>Title 2</h4>
-            <p className='expertise-summary'>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
-          </div>
-        </div>
-        <div className='column'>
-          <div className='expertise-block'>
-            <i className='fab fa-node-js expertise-logo'></i>
-            <h4 className='expertise-title'>Title 3</h4>
-            <p className='expertise-summary'>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
-          </div>
+          )}
         </div>
       </div>
     </section>
