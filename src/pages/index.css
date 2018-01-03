@@ -144,9 +144,6 @@ footer {
   margin: 0 auto;
   max-width: 75%;
 }
-.screenshot-container {
-  margin: 1.56rem 0 0;
-}
 section {
   overflow: auto;
   padding: 0 0 3rem;
@@ -226,7 +223,7 @@ section {
   margin: 1rem 0;
 }
 .footer-logo {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 #hero-header {
   color: #fff;
@@ -235,7 +232,11 @@ section {
   margin: 0;
 }
 #hero-logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+#hero-subheader {
+  color: #fff;
+  padding-top: 0.75rem;
 }
 #learn-more-link {
   color: rgba(255,255,255,0.7);
