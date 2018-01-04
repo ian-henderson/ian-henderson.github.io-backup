@@ -7,17 +7,17 @@ const expertises = [
   {
     iconClass: "fas fa-code",
     title: "Front End",
-    summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+    summary: "In depth knowledge of CSS3, HTML5, Responsive Web Design, JavaScript, ReactJS & ReduxJS libraries."
   },
   {
     iconClass: "fas fa-database",
     title: "Back End",
-    summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+    summary: "Adept with PHP and Python, Laravel and Django frameworks, and SQL databases."
   },
   {
-    iconClass: "fas fa-pencil-alt",
-    title: "???",
-    summary: "I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start."
+    iconClass: "fas fa-cogs",
+    title: "Tool Set",
+    summary: "Heroku, Bash, Docker, Vagrant, Linux, Git, Vim, and VS Code"
   }
 ]
 
@@ -36,7 +36,7 @@ const IndexPage = () =>
           <p id='hero-subheader' className='statement'>
             Software Engineer
           </p>
-          <a href='#sub-footer'>
+          <a target='_blank' href={resume}>
             <button id='hero-button'>
               Yes, I'm available for hire
             </button>
@@ -60,12 +60,12 @@ const IndexPage = () =>
             My Expertise
           </p>
           <p className='statement'>
-            Full Stack Development
+            These are the areas I have the most experience in. <br /> Picking up new languages and frameworks isn't a problem.
           </p>
         </div>
         <div>
           {expertises.map((expertise, index) => 
-            <div className='column'>
+            <div key={index} className='column'>
               <div className='expertise-block'>
                 <i className={`${expertise.iconClass} expertise-logo`}></i>
                 <h4 className='expertise-title'>{expertise.title}</h4>
@@ -138,10 +138,6 @@ const IndexPage = () =>
             {/* LinkedIn */}
             <a target='_blank' href='https://www.linkedin.com/in/iancurtish/'>
               <i className='fab fa-linkedin social-logo'></i>
-            </a>
-            {/* Resume */}
-            <a target='_blank' href={resume}>
-              <i className='fas fa-file-alt'></i>
             </a>
             {/* Twitter */}
             <a target='_blank' href='https://twitter.com/iancurtish'>

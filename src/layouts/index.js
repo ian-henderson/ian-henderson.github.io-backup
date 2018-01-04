@@ -7,7 +7,7 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
-      <title>Ian Henderson | Web Developer</title>
+      <title>Ian Henderson | Software Engineer</title>
       <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"/>
       <link rel='shortcut icon' type='image/x-icon' href={favicon} />
     </Helmet>
