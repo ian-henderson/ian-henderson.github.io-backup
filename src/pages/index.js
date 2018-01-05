@@ -170,7 +170,7 @@ const IndexPage = () =>
           <div className='social-logos-container'>
             {/* GitHub */}
             <a target='_blank' href='https://github.com/ian-henderson'>
-              <i className='fab fa-github-title social-logo'></i>
+              <i className='fab fa-github-alt social-logo'></i>
             </a>
             {/* LinkedIn */}
             <a target='_blank' href='https://www.linkedin.com/in/iancurtish/'>
