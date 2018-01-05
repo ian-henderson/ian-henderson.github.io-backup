@@ -1,26 +1,19 @@
 import React from 'react'
 import './SlideShow.css'
 
-const Slide = props => {
-  let classes = 'slide'
-  if (props.active) classes += ' slide-active'
-  return (
-    <div className={classes}>
-      <div className='image-container'>
-        <button className='slide-button previous' onClick={props.handlePrevious}>
-          <i className="fas fa-angle-left"></i>
-        </button>
-        <a href='https://reddit-reactjs.herokuapp.com' target='_blank'>
-          <img src={props.imagePath} alt={props.title} />
-        </a>
-        <button className='slide-button next' onClick={props.handleNext}>
-          <i className="fas fa-angle-right"></i>
-        </button>
-      </div>
-      <p className='slide-description'>{props.title}</p>
+const Slide = props =>
+  <div className={props.active ? 'slide-active slide' : 'slide'}>
+    <div className='image-container'>
+      <button className='slide-button previous' onClick={props.handlePrevious}>
+        <i className='fas fa-angle-left'></i>
+      </button>
+      <img src={props.imagePath} alt={props.title} onClick={props.handleNext} />
+      <button className='slide-button next' onClick={props.handleNext}>
+        <i className='fas fa-angle-right'></i>
+      </button>
     </div>
-  )
-}
+    <p className='slide-description'>{props.title}</p>
+  </div>
 
 class SlideShow extends React.PureComponent {
   constructor(props) {
@@ -31,7 +24,9 @@ class SlideShow extends React.PureComponent {
   }
 
   handleNext() {
-    this.setState({ currentSlide: (this.state.currentSlide + 1) % this.props.data.length })
+    this.setState({
+      currentSlide: (this.state.currentSlide + 1) % this.props.data.length
+    })
   }
 
   handlePrevious() {

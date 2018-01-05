@@ -64,7 +64,7 @@ const IndexPage = () =>
           <p id='hero-subheader' className='statement'>
             Software Engineer
           </p>
-          <a target='_blank' href={resume}>
+          <a href={resume} target='_blank'>
             <button id='hero-button'>
               Yes, I'm available for hire
             </button>
@@ -88,7 +88,7 @@ const IndexPage = () =>
             My Expertise
           </p>
           <p className='statement'>
-            These are the areas I have the most experience in.<br />
+            These are the areas I have the most experience in.
             Picking up new languages and frameworks isn't a problem.
           </p>
         </div>
@@ -109,29 +109,37 @@ const IndexPage = () =>
     {/* Personal Projects */}
     <section id='personal-projects'>
       <div className='container'>
-        <div>
-          <p className='intro'>
-            Personal Projects
-          </p>
-          <p className='statement'>
-            When I'm not freelancing, I'm working on digital products.
-          </p>
-        </div>
-        <div>
-          <div className='expertise-block'>
-            {/* TODO: Set up slide show here */}
-            {/*
-            <a target='_blank' href='https://reddit-reactjs.herokuapp.com'>
-              <img src={redditScreenshot} />
-            </a>
-            */}
-            <p className='intro'>
-              <a target='_blank' href='https://github.com/ian-henderson/reddit'>Reddit Browser</a>
-            </p>
-            <p className='description-container'>
-              A progressive web app for Reddit. It consumes Reddit's API to
-              minimally present subreddit data with endlessly scrolling feeds.
-            </p>
+        <p className='intro'>
+          Personal Projects
+        </p>
+        <p className='statement'>
+        </p>
+        <div className='projects-row'>
+          <div className='column-left'>
+            <div className='column-content'>
+              <h4 className='expertise-title project-title'>
+                Reddit Browser
+              </h4>
+              <p className='expertise-summary project-summary'>
+                A progressive web app for Reddit. Consumes Reddit's API to
+                minimally present subreddit data with endlessly scrolling
+                feeds.
+              </p>
+            </div>
+              <div className='project-buttons'>
+                <a href='https://reddit-reactjs.herokuapp.com' target='_blank'>
+                  <button className='project-button'>
+                    Visit Site
+                  </button>
+                </a>
+                <a href='https://github.com/ian-henderson/reddit' target='_blank'>
+                  <button className='project-button'>
+                    View Source
+                  </button>
+                </a>
+              </div>
+          </div>
+          <div className='column-right'>
             <SlideShow data={redditScreenshots} />
           </div>
         </div>
