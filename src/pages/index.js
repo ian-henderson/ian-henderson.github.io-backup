@@ -1,23 +1,51 @@
 import React from 'react'
-import redditScreenshot from '../images/redditScreenshot.png'
+import SlideShow from '../components/SlideShow'
 import resume from '../images/resume.pdf'
+import homeAndRedux from '../images/homeAndRedux.png'
+import listings from '../images/listings.gif'
+import loginAndRedux from '../images/loginAndRedux.png'
+import redditRequestForPermission from '../images/redditRequestForPermission.png'
+import subredditAndRedux from '../images/subredditAndRedux.png'
 import './index.css'
 
 const expertises = [
   {
     iconClass: "fas fa-code",
     title: "Front End",
-    summary: "In depth knowledge of CSS3, HTML5, Responsive Web Design, JavaScript, ReactJS & ReduxJS libraries."
+    summary: "In depth knowledge of CSS3, HTML5, Responsive Web Design, JavaScript, React & Redux libraries."
   },
   {
     iconClass: "fas fa-database",
     title: "Back End",
-    summary: "Adept with PHP and Python, Laravel and Django frameworks, and SQL databases."
+    summary: "Adept with PHP and Python back end frameworks including Laravel and Django. Versed in SQL and relational databases."
   },
   {
     iconClass: "fas fa-cogs",
     title: "Tool Set",
-    summary: "Heroku, Bash, Docker, Vagrant, Linux, Git, Vim, and VS Code"
+    summary: "Extensive experience with development tools including Heroku, Bash, Docker, Vagrant, Linux, Git, and Vim."
+  }
+]
+
+const redditScreenshots = [
+  {
+    path: loginAndRedux,
+    title: 'Login Page with Redux Devtools'
+  },
+  {
+    path: redditRequestForPermission,
+    title: 'Reddit Request For Permission Page'
+  },
+  {
+    path: listings,
+    title: 'Endlessly Loading Data'
+  },
+  {
+    path: homeAndRedux,
+    title: 'Home Page with Redux Devtools'
+  },
+  {
+    path: subredditAndRedux,
+    title: 'Subreddit Page with Redux Devtools'
   }
 ]
 
@@ -60,11 +88,12 @@ const IndexPage = () =>
             My Expertise
           </p>
           <p className='statement'>
-            These are the areas I have the most experience in. <br /> Picking up new languages and frameworks isn't a problem.
+            These are the areas I have the most experience in.<br />
+            Picking up new languages and frameworks isn't a problem.
           </p>
         </div>
         <div>
-          {expertises.map((expertise, index) => 
+          {expertises.map((expertise, index) =>
             <div key={index} className='column'>
               <div className='expertise-block'>
                 <i className={`${expertise.iconClass} expertise-logo`}></i>
@@ -90,12 +119,20 @@ const IndexPage = () =>
         </div>
         <div>
           <div className='expertise-block'>
+            {/* TODO: Set up slide show here */}
+            {/*
             <a target='_blank' href='https://reddit-reactjs.herokuapp.com'>
               <img src={redditScreenshot} />
             </a>
-            <p className='description-container'>
-              <a target='_blank' href='https://github.com/ian-henderson/reddit'>Reddit Browser</a> is platform that helps independent distributors of Young Living essential oils grow their business through automated class promotion and prospect follow-up management.
+            */}
+            <p className='intro'>
+              <a target='_blank' href='https://github.com/ian-henderson/reddit'>Reddit Browser</a>
             </p>
+            <p className='description-container'>
+              A progressive web app for Reddit. It consumes Reddit's API to
+              minimally present subreddit data with endlessly scrolling feeds.
+            </p>
+            <SlideShow data={redditScreenshots} />
           </div>
         </div>
       </div>
@@ -133,7 +170,7 @@ const IndexPage = () =>
           <div className='social-logos-container'>
             {/* GitHub */}
             <a target='_blank' href='https://github.com/ian-henderson'>
-              <i className='fab fa-github-alt social-logo'></i>
+              <i className='fab fa-github-title social-logo'></i>
             </a>
             {/* LinkedIn */}
             <a target='_blank' href='https://www.linkedin.com/in/iancurtish/'>

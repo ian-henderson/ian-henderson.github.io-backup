@@ -16,7 +16,7 @@ button:focus {
 }
 button:hover {
   background-color: #252a30;
-  border-color: #252a30; 
+  border-color: #252a30;
   color: #fff;
 }
 #hero-button {
@@ -29,7 +29,7 @@ button:hover {
 }
 @media screen and (min-width: 550px) {
   button {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 3rem;
     padding: 0.2rem 0.6rem;
   }
@@ -37,7 +37,7 @@ button:hover {
 @media screen and (min-width: 750px) {
   button {
     border: 2px solid;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.3rem 0.8rem;
   }
 }
@@ -102,16 +102,15 @@ footer {
 }
 .intro {
   font-size: 1.3rem;
-  margin: 3.3rem 0 0.8rem;
+  margin: 3rem 0 0.8rem;
   line-height: 1.4;
   font-weight: bold;
   text-align: center;
 }
 .learn-more-container {
-  bottom: 2.5%;
+  bottom: 4%;
   font-size: 0.9rem;
   left: 0px;
-  padding: 20px;
   position: absolute;
   right: 0px;
   z-index: 2;
@@ -119,10 +118,9 @@ footer {
 #logo-container {
   color: #fff;
   left: 0px;
-  padding: 20px;
   position: absolute;
   right: 0px;
-  top: 2.5%;
+  top: 6%;
 }
 .made-by-me {
   margin: 1.2rem 0;
@@ -146,7 +144,7 @@ footer {
 }
 section {
   overflow: auto;
-  padding: 0 0 3rem;
+  padding: 0 0 2.5rem;
 }
 .social-logos-container a {
   color: rgba(255,255,255,0.4);
@@ -262,6 +260,12 @@ section {
   margin: 0;
 }
 @media screen and (min-width: 550px) {
+  #hero-header {
+    font-size: 2rem;
+  }
+  #hero-subheader {
+    font-size: 1.25rem;
+  }
   .title {
     font-size: 1.5rem;
   }
@@ -269,6 +273,9 @@ section {
 @media screen and (min-width: 750px) {
   #hero-header {
     font-size: 2.3rem;
+  }
+  #hero-subheader {
+    font-size: 1.45rem;
   }
   .intro {
     font-size: 2rem;
@@ -281,5 +288,8 @@ section {
 @media screen and (min-width: 1000px) {
   #hero-header {
     font-size: 3.3rem;
+  }
+  #hero-subheader {
+    font-size: 1.75rem;
   }
 }
