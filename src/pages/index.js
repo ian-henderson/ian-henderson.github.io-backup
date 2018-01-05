@@ -85,7 +85,7 @@ const IndexPage = () =>
       <div className='container'>
         <div id='me-header-container'>
           <p className='intro'>
-            My Expertise
+            Skills
           </p>
           <p className='statement'>
             These are the areas I have the most experience in.
@@ -110,7 +110,7 @@ const IndexPage = () =>
     <section id='personal-projects'>
       <div className='container'>
         <p className='intro'>
-          Personal Projects
+          Projects
         </p>
         <p className='statement'>
         </p>
