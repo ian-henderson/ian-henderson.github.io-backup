@@ -28,16 +28,16 @@ const expertises = [
 
 const redditScreenshots = [
   {
+    path: listings,
+    title: 'Endlessly Loading Data'
+  },
+  {
     path: loginAndRedux,
     title: 'Login Page with Redux Devtools'
   },
   {
     path: redditRequestForPermission,
     title: 'Reddit Request For Permission Page'
-  },
-  {
-    path: listings,
-    title: 'Endlessly Loading Data'
   },
   {
     path: homeAndRedux,
@@ -88,8 +88,7 @@ const IndexPage = () =>
             Skills
           </p>
           <p className='statement'>
-            These are the areas I have the most experience in.
-            Picking up new languages and frameworks isn't a problem.
+            Adept at adapting to new systems knowledge, technologies, and languages.
           </p>
         </div>
         <div>
@@ -151,16 +150,11 @@ const IndexPage = () =>
       <div className='container'>
         <div>
           <p className='intro'>
-            Want to work together?
+            Contact
           </p>
           <p className='statement'>
-            I'm currently on the job hunt; feel free to reach out.
+            iancurtish@gmail.com
           </p>
-          <a href='mailto:iancurtish@gmail.com'>
-            <button>
-              get started
-            </button>
-          </a>
         </div>
       </div>
     </section>
@@ -173,7 +167,7 @@ const IndexPage = () =>
             <i className='fab fa-grav footer-logo'></i>
           </div>
           <p className='made-by-me'>
-            Handmade by me © 2018.
+            Copyright © 2018 by Ian Henderson
           </p>
           <div className='social-logos-container'>
             {/* GitHub */}
