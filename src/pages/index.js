@@ -66,7 +66,7 @@ const IndexPage = () =>
           </p>
           <a href={resume} target='_blank'>
             <button id='hero-button'>
-              Yes, I'm available for hire
+              Résumé
             </button>
           </a>
           <div className='learn-more-container'>
