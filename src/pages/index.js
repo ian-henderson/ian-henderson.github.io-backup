@@ -156,7 +156,7 @@ const IndexPage = () =>
           <p className='statement'>
             I'm currently on the job hunt; feel free to reach out.
           </p>
-          <a href='mailto:iancurtish@gmail.com?subject=Work'>
+          <a href='mailto:iancurtish@gmail.com'>
             <button>
               get started
             </button>
