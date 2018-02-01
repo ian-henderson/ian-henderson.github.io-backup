@@ -17,7 +17,7 @@ const expertises = [
   {
     iconClass: "fas fa-database",
     title: "Back End",
-    summary: "Adept with PHP and Python back end frameworks including Laravel and Django. Versed in SQL and relational databases."
+    summary: "Adept with PHP and Python back end frameworks including Laravel and Django. Versed in both SQL and NoSQL databases."
   },
   {
     iconClass: "fas fa-cogs",
