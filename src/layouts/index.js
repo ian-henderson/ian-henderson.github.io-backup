@@ -8,12 +8,9 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
       <title>Ian Henderson | Software Engineer</title>
-      {/*<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"/>*/}
       <script
         defer
         src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-        integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-        crossorigin="anonymous"
       />
       <link rel="shortcut icon" type="image/x-icon" href={favicon} />
       <script
