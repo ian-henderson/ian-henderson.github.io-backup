@@ -10,19 +10,19 @@ import './index.css'
 
 const expertises = [
   {
-    iconClass: "fas fa-code",
-    title: "Front End",
-    summary: "In depth knowledge of CSS3, HTML5, Responsive Web Design, JavaScript, React & Redux libraries."
+    iconClass: "fab fa-js-square",
+    title: "Client-side",
+    summary: "In depth knowledge of ES6 JavaScript, React+Redux Ecosystem, React Native, Redux, CSS3, HTML5, and Responsive Web Design."
   },
   {
     iconClass: "fas fa-database",
-    title: "Back End",
-    summary: "Adept with PHP and Python back end frameworks including Laravel and Django. Versed in both SQL and NoSQL databases."
+    title: "Server-side",
+    summary: "Adept with back end frameworks and technologies including Node.js, GraphQL, and MongoDB."
   },
   {
-    iconClass: "fas fa-cogs",
+    iconClass: "fas fa-toolbox",
     title: "Tool Set",
-    summary: "Extensive experience with development tools including Heroku, Bash, Docker, Vagrant, Linux, Git, and Vim."
+    summary: "Extensive experience with development tools including VSCode, ESLint, Flow Type System, Linux, and Vim."
   }
 ]
 
