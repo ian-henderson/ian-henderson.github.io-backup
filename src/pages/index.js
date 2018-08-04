@@ -161,7 +161,7 @@ const IndexPage = () => (
               <i className="fab fa-linkedin social-logo" />
             </a>
             {/* Twitter */}
-            <a target="_blank" href="https://twitter.com/iancurtish">
+            <a target="_blank" href="https://twitter.com/_ian_henderson">
               <i className="fab fa-twitter social-logo" />
             </a>
           </div>
