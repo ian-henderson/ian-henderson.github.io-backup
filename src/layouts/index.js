@@ -15,10 +15,13 @@ const TemplateWrapper = ({ children }) => (
         integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
         crossorigin="anonymous"
       />
-      <link rel='shortcut icon' type='image/x-icon' href={favicon} />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112309795-1"></script>
-    {/* Google Analytics */}
-    <script>{`
+      <link rel="shortcut icon" type="image/x-icon" href={favicon} />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-112309795-1"
+      />
+      {/* Google Analytics */}
+      <script>{`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
