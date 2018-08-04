@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "Ian Henderson",
   "dependencies": {
-    "gatsby": "^1.9.255",
-    "gatsby-link": "^1.6.41",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-plugin-typography": "^1.7.19",
     "typography-theme-sutro": "^0.15.10"
   },
   "keywords": [
@@ -24,7 +24,7 @@
     "start": "npm run develop"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.1"
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.14.0"
   }
 }
