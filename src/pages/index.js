@@ -13,7 +13,7 @@ const expertises = [
     iconClass: 'fab fa-js-square',
     title: 'Client-side',
     summary:
-      'In depth knowledge of ES6 JavaScript, React+Redux Ecosystem, React Native, Redux, CSS3, HTML5, and Responsive Web Design.',
+      'In depth knowledge of ES6 JavaScript, React+Redux Ecosystem, React Native, CSS3, HTML5, and Responsive Web Design.',
   },
   {
     iconClass: 'fas fa-database',
@@ -25,7 +25,7 @@ const expertises = [
     iconClass: 'fas fa-toolbox',
     title: 'Tool Set',
     summary:
-      'Extensive experience with development tools including VSCode, ESLint, Flow Type System, Linux, and Vim.',
+      'Extensive experience with development tools including VSCode, ESLint, Flow Type System, Git, Linux, and Vim.',
   },
 ]
 
