@@ -19,7 +19,7 @@ const expertises = [
     iconClass: 'fas fa-database',
     title: 'Server-side',
     summary:
-      'Adept with back end frameworks and technologies including Node.js, GraphQL, and MongoDB.',
+      'Adept with back end frameworks and technologies including Node.js, GraphQL, Express, and MongoDB.',
   },
   {
     iconClass: 'fas fa-toolbox',
